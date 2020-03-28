@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            var valorUser = document.getElementById("User");
+
+            var valorPasswd = document.getElementById("Passwd");
+            var btnEnviar = document.getElementById("btnEnviar");
+
+            btnEnviar.onclick = function () {
+
+                if (valorUser.value == "Lautaro" && valorPasswd.value == "lauti123") {
+
+                    alert("Contraseña correcta");
+
+                }
+                else {
+                    alert("Contraseña Incorrecta")
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <pr> Usuario:</br>
+        <input type="text" id="User">
+        <br> Contraseña:</br>
+        <input type="password" id="Passwd"> <br>
+        <input type="checkbox" value="1" name="ck1"> Recordar y usar Contraseña <br>
+        <input type="button" value="Enviar" id="btnEnviar">
+        <input type="button" value="Limpiar" name="btnLimpiar">
+
+</body>
+
+</html>
