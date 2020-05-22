@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+
+    var http= new XMLHttpRequest();//peticiones a servidores async
+
+    http.onreadystatechange=function(){//que queremos que se ejecute cuando llegue la respuesta del servidor
+        //console.log("llego respuesta",http.readyState,http.status,http.responseText);
+        if (http.readyState===4) {//cuando devuelve el 4 termino la peticion al servidor
+
+            if (http.status===200) {//status del servidor
+
+                console.log("tenemos un 200");//el status va a tener un valor cuando el ready state valga 4
+                document.write(http.responseText);//escribo en el body
+                
+            }else{
+                console.log("tenemos un error!!");//y cuando tengamos el status, tenemos el response
+            }
+            
+        }
+    }
+
+    http.open("GET","http://localhost:3000/login",true)//se abre una conexion con el servidor
+    http.send();
+    console.log("termino la llamada");
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

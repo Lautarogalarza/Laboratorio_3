@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./funciones.js"> </script>
+</head>
+
+<body>
+    <input type="button" class="botonAbrir" id="btnAbrir" value="Abrir" onclick="abrir();">
+
+    <div class="contenedoraflex">
+ 
+    <div class="contenedor" id="contAgregar">
+        
+        <input class="botonCerrar" type="button" id="btnCerrar" value="X" onclick="cerrar();">
+
+        <label for="fname">Nombre</label>
+        <br>
+        <input type="text" id="fname" class="sinError" name="firstname" placeholder="Tu nombre...">
+        <br>
+        <label for="lname">Apellido</label>
+        <br>
+        <input type="text" id="lname" class="sinError" name="lastname" placeholder="Tu apelido...">
+        <br>
+
+        <input class="botonGuardar" type="button" value="Guardar" onclick="agregar();">
+
+    </div>
+</div>
+
+    <h2>Lista de personas</h2>
+
+    <table id="tabla">
+        <thead>
+            <tr>
+
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Accion</th>
+
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+            <tr>
+                <td>Jim</td>
+                <td>Lombriz</td>
+                <td><a href="">borrar</a></td>
+            </tr>
+            <tr>
+                <td>jon</td>
+                <td>snow</td>
+                <td><a href="">borrar</a></td>
+            </tr>
+            <tr>
+                <td>ned</td>
+                <td>stark</td>
+                <td><a href="">borrar</a></td>
+            </tr>
+
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

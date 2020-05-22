@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+
+            var btnEnviar = document.getElementById("btnEnviar");
+
+            btnEnviar.onclick = function () {
+
+                var valorUser = document.getElementById("User").value;
+                var valorPasswd = document.getElementById("Passwd").value;
+
+                if (valorUser == "Lautaro" && valorPasswd == "lauti123") {
+
+                    alert("Contraseña correcta");
+
+                }
+                else {
+                    alert("Contraseña Incorrecta")
+                }
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!--<pr> Usuario:</br> -->
+    <label>Usuario:</br>
+        <input type="text" id="User"> </br>
+
+        <label>Contraseña:</br>
+            <input type="password" id="Passwd"> <br>
+
+            <input type="checkbox" value="1" name="ck1"> Recordar y usar Contraseña <br>
+            <a href="./index.html">Link</a>
+            <!--link que redirecciona-->
+            <input type="button" value="Enviar" id="btnEnviar">
+            <input type="button" value="Limpiar" name="btnLimpiar">
+
+            <table><!--grilla-->
+                <tr><!--table row-->
+                    <th> Nombre </th><!--cabecera-->
+                    <th> Apellido </th>
+                </tr>
+
+                <tr>
+                    <td>Lautaro</td><!--celdas normales-->
+                    <td>Galarza</td>
+                </tr>
+            </table>
+
+
+            <audio controls> 
+            <source src="./01 - Ranbu no Melody.mp3">     
+            </audio>
+
+            <video>
+                to do
+            </video>
+
+            
+
+</body>
+
+</html>

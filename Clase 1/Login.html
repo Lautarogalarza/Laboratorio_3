@@ -10,14 +10,15 @@
 
         window.onload = function () {
 
-            var valorUser = document.getElementById("User");
 
-            var valorPasswd = document.getElementById("Passwd");
             var btnEnviar = document.getElementById("btnEnviar");
 
             btnEnviar.onclick = function () {
 
-                if (valorUser.value == "Lautaro" && valorPasswd.value == "lauti123") {
+                var valorUser = document.getElementById("User").value;
+                var valorPasswd = document.getElementById("Passwd").value;
+
+                if (valorUser == "Lautaro" && valorPasswd == "lauti123") {
 
                     alert("Contraseña correcta");
 
@@ -35,13 +36,23 @@
 </head>
 
 <body>
-    <pr> Usuario:</br>
-        <input type="text" id="User">
-        <br> Contraseña:</br>
-        <input type="password" id="Passwd"> <br>
-        <input type="checkbox" value="1" name="ck1"> Recordar y usar Contraseña <br>
-        <input type="button" value="Enviar" id="btnEnviar">
-        <input type="button" value="Limpiar" name="btnLimpiar">
+
+  <!---  <form  method="GET">
+
+        <label>Usuario:</br>
+            <input type="text" id="User" name="usr"> </br>
+
+            <label>Contraseña:</br>
+                <input type="password" id="Passwd" name="pass"> <br>
+
+                <input type="checkbox" value="1" name="ck1"> Recordar y usar Contraseña <br>
+                <input type="submit" value="Enviar" id="btnEnviar"> funcionan siempre dentro de un form
+                <input type="reset" value="Limpiar" name="btnLimpiar">
+
+    </form> -->
+
+
+
 
 </body>
 

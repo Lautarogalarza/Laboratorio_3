@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./funciones.js"> </script>
+</head>
+
+<body>
+
+   <div class="Cargando" id="Cargando">
+
+    <img src="./Bean Eater-1s-200px (1).gif" >
+
+   </div>
+    
+    
+    <h2 class="listaPersonas">Lista de personas</h2>
+    <input type="button" class="botonAbrir" id="btnAbrir" value="Agregar Personas" onclick="abrir();">
+        <div class="contenedoraflex">
+     
+        <div class="contenedor" id="contAgregar">
+            
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x" onclick="cerrar();">
+            <br>
+    
+            <label for="fname">Nombre</label>
+            <br>
+            <input type="text" id="fname" class="sinError" name="firstname" placeholder="nombre...">
+            <br>
+            <label for="lname">Apellido</label>
+            <br>
+            <input type="text" id="lname" class="sinError" name="lastname" placeholder="apelido...">
+            <br>
+            <label for="lname">Telefono</label>
+            <br>
+            <input type="number" id="tname" class="sinError" name="phone" placeholder="Telefono...">
+            <br>
+            <label for="lname">Fecha</label>
+            <br>
+            <input type="date" id="dname" class="sinError" name="date">
+            <br>
+    
+            <input class="botonGuardar" type="button" value="Guardar" onclick="agregar();">
+    
+        </div>
+    </div>
+
+    <table id="tabla" border="1">
+        <thead>
+          <tr> 
+
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha</th>
+                <th>Telefono</th>
+                <th>Accion</th>
+
+             </tr> 
+        </thead>
+        <tbody id="tCuerpo">
+         
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

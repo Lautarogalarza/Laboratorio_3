@@ -1,0 +1,129 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: whitesmoke;}
+
+th{
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+}
+
+.Cargando
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+input[type=text],[type=date],[type=number]{
+    width: 100%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botonGuardar{
+    width: 50%;
+    background-color:lightseagreen;
+    color: white;
+    padding: 30px 76px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+
+}
+
+.botonAbrir{
+    float:right;
+    width: 10%;
+    background-color:lightblue;
+    color: white;
+    padding: 10px 24px;
+    padding-right: 9.5%;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.botonCerrar
+{
+    width: 5%;
+    background-color: red;
+    color: white;
+    padding: 7px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 90%;
+  
+}
+
+.sinError{
+    border: 1px solid #cccccc;
+}
+
+.error{
+    
+    border: 1px solid red;
+
+}
+
+.botonGuardar:hover{
+    background-color:lightgreen;
+}
+
+.botonCerrar:hover{
+    background-color:lightcoral;
+}
+
+.contenedoraflex{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+}
+
+.contenedor{
+    top: 135px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    opacity: 0;
+    display: none;
+    
+}
+
+.verForm{
+    opacity: 1;
+}
+
+.listaPersonas{
+
+display: inline-block;
+
+}
