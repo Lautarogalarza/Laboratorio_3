@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./Mascota.js"> </script>
+    <script type="text/javascript" src="./Perro.js"> </script>
+    <script type="text/javascript" src="./Gato.js"> </script>
+    <script type="text/javascript" src="./Pajaro.js"> </script>
+    <script type="text/javascript" src="./Enumerados.js"> </script>
+    <script type="text/javascript" src="./Animales.js"> </script>
+</head>
+
+<body>
+
+
+    <h2 class="listaMascotas">Lista de Mascotas</h2>
+    <input type="button" class="botonAbrir" id="btnAbrir" value="Mascotas" onclick="Pets.abrirGrilla();">
+    <input type="text" class="searchBar" id="buscador" placeholder="Buscar...">
+
+
+
+    <div class="contenedoraflex">
+
+        <div class="contenedor" id="contGrilla">
+
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x" onclick="Pets.cerrarGrilla();">
+            <br>
+
+            <label for="nombreAnimal">Nombre</label>
+            <br>
+            <input type="text" id="nombreAnimal" class="sinError" name="nombre" placeholder="nombre...">
+            <br>
+
+            <!---------------------------------------------------------->
+
+            <label for="animales">Tipo Animal</label>
+
+            <select class="combo" name="TiposAnimale" id="animales">
+                <option hidden disabled selected value="">Animal</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Pajaro">Pajaro</option>
+            </select>
+            <br>
+
+            <div id="contRaza" hidden>
+
+                <label for="raza">Raza</label>
+                <br>
+                <input type="text" id="raza" class="sinError" name="razaPerro" placeholder="Raza...">
+                <br>
+
+            </div>
+            <div id="contVidas" hidden>
+
+                <label for="vidas">Vidas</label>
+                <br>
+                <input type="number" max="9" min="1" id="vidas" class="sinError" name="vidasGato"
+                    placeholder="Vidas...">
+                <br>
+
+            </div>
+
+            <div id="contTipos" hidden>
+
+                <label for="tipo">Tipo Pajaro</label>
+
+                <select class="combo" name="tipoPajaro" id="tipo">
+                    <option value="Rapiña">Rapiña</option>
+                    <option value="Loro">Loro</option>
+                </select>
+                <br>
+            </div>
+
+            <!----------------------------------------------------------------------------->
+
+            <input class="botonEliminar" type="button" id="btnEliminar" value="Eliminar" >
+            <input class="botonModificar" type="button" id="btnModificar" value="Modificar" >
+            <input class="botonGuardar" type="button" id="btnGuardar" value="Agregar" onclick="Pets.agregar();" >
+
+            <div id="contTipos" hidden>
+
+                <label for="tipo">Tipo Camioneta</label>
+
+                <select class="combo" name="tipoCamioneta" id="tipo">
+                    <option value="Es4X4">4x4</option>
+                    <option value="NoEs4x4">Otros</option>
+                </select>
+                <br>
+            </div>
+
+        </div>
+    </div>
+
+    <table id="tabla" border="1">
+        <thead>
+            <tr>
+
+                <th>Nombre</th>
+                <th>Tipo Animal</th>
+                <th>Detalle</th>
+
+            </tr>
+        </thead>
+        <tbody id="tCuerpo">
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

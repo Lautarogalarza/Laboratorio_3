@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promesas</title>
+</head>
+
+<body>
+
+    <script>
+
+        var promesa = new Promise(function (resolve, reject) {//de esta forma declaro mis promesas, dependiendo lo que pase adentro se va a ejecutar el resolve o el reject
+
+            setTimeout(function () {
+
+
+                if (true) {
+
+                    resolve("Se termono bien!!!");//normalmente retorna un JSON
+
+                } else {
+                    +
+                        reject("Error!!!");
+                }
+
+            }, 3000);//voy a hacer que la promesa tarde en evaluar sus condiciones 3 segundos
+
+        });
+
+        //solo se va a ejecutar la funcion que es llamada, si la promesa devuelve un resolve o un reject 
+
+        console.log("Inicio la promesa");
+        promesa.then(function (response) {
+
+            console.log(response);
+
+        }).catch(function (response) {
+
+            console.log(response);
+
+        }); 
+        console.log("Termino la promesa");
+        //las promesas al ser llamadas de formas asincronas no se ejecutan linea a linea sino cuando terminan de ejecutarse, asi el navegador puede seguir con las lineas siguientes
+
+
+
+        /*var promesa = new Promise( (resolve, reject) =>{//de esta forma declaro mis promesas, dependiendo lo que pase adentro se va a ejecutar el resolve o el reject
+
+            setTimeout(() =>{
+
+
+                if (true) {
+
+                    resolve("Se termono bien!!!");//normalmente retorna un JSON
+
+                } else 
+                {              
+                reject("Error!!!");
+                }
+
+            }, 3000);//voy a hacer que la promesa tarde en evaluar sus condiciones 3 segundos
+
+        });
+
+
+        promesa.then((response)=> {
+
+            console.log(response);
+
+        }).catch((response)=> {
+
+            console.log(response);
+
+        }); ARROW FUNCTION*/
+
+    </script>
+
+</body>
+
+</html>

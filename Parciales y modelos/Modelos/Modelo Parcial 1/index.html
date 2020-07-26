@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="./funciones.js"> </script>
+</head>
+
+<body>
+
+   <div class="Cargando" id="Cargando"> 
+
+    <img src="./Bean Eater-1s-200px (1).gif" > 
+
+   </div> 
+    
+    
+    <h2 class="listaPersonas">Lista de personas</h2>
+        <div class="contenedoraflex">
+
+        <div class="contenedorGrilla" id="contGrilla">
+            
+            <input class="botonCerrar" type="button" id="btnCerrar" value="x" onclick="cerrarGrilla();">
+            <br>
+    
+            <label for="fname">Nombre</label>
+            <br>
+            <input type="text" id="fname" class="sinError" name="firstname" placeholder="nombre...">
+            <br>
+            <label for="lname">Apellido</label>
+            <br>
+            <input type="text" id="lname" class="sinError" name="lastname" placeholder="apelido...">
+            <br>
+            <label for="dname">Fecha</label>
+            <br>
+            <input type="date" id="dname" class="sinError" name="date">
+            <br>
+            <label for="sname">Sexo</label>
+             <br>
+            <label for="sname">F</label> 
+            <label for="sname">M</label>
+            <br>
+            <input type="radio" id="Fename"  name="sex" value="Female" checked> 
+            <input type="radio" id="Mename"  name="sex" value="Male">
+            <br>
+    
+            <input class="botonEliminar" type="button" id="btnEliminar" value="Eliminar" >
+            <input class="botonModificar" type="button"id="btnModificar"  value="Modificar" >
+        </div>
+
+
+
+    </div>
+
+    <table id="tabla" border="1">
+        <thead>
+          <tr> 
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha</th>
+                <th>Sexo</th>
+
+             </tr> 
+        </thead>
+        <tbody id="tCuerpo">
+         
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
